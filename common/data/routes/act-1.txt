@@ -1,6 +1,7 @@
 Find and kill {kill|Hillock}
 ➞ {enter|1_1_town} #Lioneye's Watch
 Hand in {quest|a1q1} #Enemy at the Gate
+xx
 ➞ {enter|1_1_2} #The Coast
 Get {get_waypoint}
 ➞ {enter|1_1_3} #The Mud Flats
