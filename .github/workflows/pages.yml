@@ -23,6 +23,7 @@ jobs:
         git checkout -B gh-pages
         rm -rf *
         mv ../dist/** .
+        git add *
         git commit -am "Update from commit ${{ github.sha }}"
     - uses: ad-m/github-push-action@master
       with:
