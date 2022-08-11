@@ -1,7 +1,0 @@
-{
-  "name": "exile-leveling",
-  "workspaces": [
-    "seeding",
-    "web"
-  ]
-}
