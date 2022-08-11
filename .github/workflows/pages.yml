@@ -1,0 +1,30 @@
+name: Auto-Deploy Page
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 18.x
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build -w web
+    - name: Commit files
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        mv web/dist ..
+        git checkout -B gh-pages
+        rm -rf *
+        mv ../dist/** .
+        git commit -am "Update from commit ${{ github.sha }}"
+    - uses: ad-m/github-push-action@master
+      with:
+        force: true
+        branch: gh-pages
