@@ -4,13 +4,10 @@ Mud Flats
 Submerged Passage
 Coast -> Tidal Island
 Hailrake
-{waypoint|1_1_2} #The Coast
-➞ {enter|1_1_2a} #The Tidal Island
-Find and kill {kill|Hailrake}, take {quest_text|Medicine Chest}
 {logout}
 Hand in {quest|a1q4} #Breaking Some Eggs
 Hand in {quest|a1q5} #Mercy Mission
-{waypoint|1_1_4_1} #The Submerged Passage
+Submerged Passage
 Find bridge, place {portal|set}
 ➞ {enter|1_1_5} #The Ledge
 ➞ {enter|1_1_6} #The Climb
