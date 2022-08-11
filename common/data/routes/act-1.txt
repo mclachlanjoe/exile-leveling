@@ -30,16 +30,15 @@ Prisoner's Gate
 Go down the ledge next to the road
 The Ship Graveyard
 Get waypoint
-Find {area|1_1_9a}, place {portal|set} #The Ship Graveyard Cave
-➞ {enter|1_1_11_1} #The Cavern of Wrath
-{waypoint|1_1_town} #Lioneye's Watch
-Take {portal|use}
-➞ {enter|1_1_9a} #The Ship Graveyard Cave
-Find {quest_text|Allflame}
-{logout}
-{waypoint|1_1_9} #The Ship Graveyard
-Find and kill {kill|Captain Fairgraves}
-{logout}
+TP by Cave
+Cavern of Wrath
+Waypoint to town
+Take portal
+Find Allflame
+Logout
+The Ship Graveyard
+Fairgraves
+Logout
 Hand in {quest|a1q6} #The Marooned Mariner
 Hand in {quest|a1q3} #The Siren's Cadence
 {waypoint|1_1_11_1} #The Cavern of Wrath
